@@ -1,0 +1,459 @@
+<!-- 
+    ============================================================
+    PAGE EDITOR — Student 1 (ST1)
+    AquaAction | SDG 06: Clean Water and Sanitation
+    Author  : Methum Thevjan Weeratunga
+    ID      : 20233134 / W2182089
+    Role    : Website HTML Template, Global CSS, Content_ST1, Home Page & Gallery
+    Stylesheet: style.css (global) + pageEditor_validator.css (layout)
+    ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD: Page metadata, external CSS links -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor — Methum Thevjan Weeratunga | ST1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pageEditor_validator.css">
+</head>
+
+<body class="validation-page">
+
+    <!-- ===== HEADER: Shared AquaAction site-wide navigation banner ===== -->
+    <header>
+        <div class="logo-container">
+            <a href="home.html" class="logo-link">
+                <img src="logo.png" alt="AquaAction Logo" class="logo-img">
+                <div class="logo-text">
+                    <h2>AquaAction</h2>
+                    <p>SDG 06 | CLEAN WATER</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="header-right">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="ais.html">Simulator</a></li>
+                    <li><a href="feedback.html">Support</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+
+            <a href="profile.html" class="profile-circle" title="User Profile">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== STUDENT IDENTITY BANNER: Displays student name, ID, and allocated role ===== -->
+    <section class="stud">
+        <h2>Methum Thevjan Weeratunga &nbsp;|&nbsp; 20233134 / W2182089 &nbsp;|&nbsp; Role: Website HTML Template,
+            Global CSS, Content_ST1, Home Page &amp; Gallery</h2>
+    </section>
+
+    <!-- ===== MAIN LAYOUT CONTAINER: Wraps the sidebar and main content in a two-column grid ===== -->
+    <div class="container">
+
+        <!-- ===== SIDEBAR: Quick-jump navigation index to all sections on this page ===== -->
+        <aside>
+            <h3>Core pages developed:</h3>
+            <ul class="top-level-ul">
+                <li>Student 1 — Methum Thevjan
+                    <ul>
+                        <li><a href="#home">Home Page</a></li>
+                        <li><a href="#gallery">Gallery Page</a></li>
+                        <li><a href="#content">Content Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#group">Group Meetings and Contribution Log</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+
+        <!-- ===== MAIN CONTENT: All page editor sections are contained here ===== -->
+        <main>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 1 — HOME PAGE
+                 Technical description, accessibility notes, and links
+            ══════════════════════════════════════ -->
+            <section id="home">
+                <h2>Home Page</h2>
+
+                <h3>Technical Description</h3>
+                <p>The Home Page (<code>home.html</code>) was designed to introduce users to the mission of AquaAction
+                    while maintaining a professional and engaging aesthetic. The page utilizes a semantic HTML5
+                    structure with a <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and
+                    <code>&lt;footer&gt;</code>. The Hero section uses a <code>linear-gradient</code> overlay (135deg)
+                    on top of a <code>background-image</code> to ensure that the white text remains legible while
+                    providing high-impact visuals. Text-shadowing (<code>1px 1px 2px</code>) further enhances clarity
+                    against the atmospheric background.
+                </p>
+
+                <p>For the "Why we act for SDG 6" section, a <code>.home-card-grid</code> uses CSS Grid with
+                    <code>repeat(auto-fit, minmax(300px, 1fr))</code> to provide a fully responsive layout that
+                    automatically adjusts card columns based on screen size. The "Explore our work" gallery uses an
+                    <code>.interactive-gallery</code> grid, where each <code>.gallery-item</code> utilizes custom CSS
+                    variables (<code>--tile-image</code>) for modular background control. Hover states use
+                    <code>transform: translateY(-10px)</code> and a increased <code>z-index: 10</code> to elevate the
+                    active tile without visual clipping.
+                </p>
+
+                <h3>Accessibility</h3>
+                <p>Accessibility is addressed through the use of semantic HTML5 landmarks and descriptive labels. The
+                    primary <code>&lt;nav&gt;</code> includes an <code>aria-label="Main navigation"</code>. All images
+                    in the content cards have descriptive <code>alt</code> text to assist screen reader users. Heading
+                    levels are strictly hierarchical, with <code>&lt;h1&gt;</code> serving as the primary title and
+                    <code>&lt;h2&gt;</code> used for subsequent sections. High color contrast is maintained by using the
+                    <code>--white</code> text on the dark <code>--dark-abyss</code> background and teal gradients.
+                </p>
+
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validation_ST1.html#homeVal">View HTML validation result for Home Page</a></p>
+
+                <h3>Link to the Page</h3>
+                <p><a href="home.html" target="_blank">Open Home Page (home.html)</a></p>
+            </section>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 2 — GALLERY PAGE
+                 Technical description, accessibility notes, and links
+            ══════════════════════════════════════ -->
+            <section id="gallery">
+                <h2>Gallery Page</h2>
+
+                <h3>Technical Description</h3>
+                <p>The Gallery Page (<code>gallery.html</code>) showcases SDG 6 innovations through an interactive grid.
+                    The layout uses a <code>.gallery-grid</code> container to house six <code>&lt;article&gt;</code>
+                    cards. Each card triggers a JavaScript function (<code>openModal(index)</code>) when clicked to
+                    display a larger version of the image and its detailed description.</p>
+
+                <p>The interactive modal pop-up consists of a <code>.modal-overlay</code> that covers the entire screen,
+                    using <code>background: rgba(5, 85, 105, 0.726)</code> and <code>backdrop-filter: blur(8px)</code>
+                    to focus the user's attention on the content. The modal's data (title, description, and image
+                    source) is dynamically populated from a JavaScript array to ensure efficient content management. A
+                    floating action button (<code>.text-size-fab</code>) allows users to toggle a global text size
+                    setting via <code>toggleGlobalTextSize()</code>, improving readability for all users.</p>
+
+                <h3>Accessibility</h3>
+                <p>The gallery uses ARIA attributes to enhance the interactive elements. The modal includes a close
+                    button with a clear "x" symbol and an <code>aria-label</code> can be added for further clarity. The
+                    thumbnail images use appropriate <code>alt</code> text such as "Rainwater" or "Smart Irrigation".
+                    The accessibility FAB includes a <code>title="Toggle Text Size"</code> attribute and an SVG icon to
+                    visually indicate its purpose. The headings follow a logical structure from <code>&lt;h1&gt;</code>
+                    to <code>&lt;h2&gt;</code>.</p>
+
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validation_ST1.html#galleryVal">View HTML validation result for Gallery Page</a></p>
+
+                <h3>Link to the Page</h3>
+                <p><a href="gallery.html" target="_blank">Open Gallery Page (gallery.html)</a></p>
+            </section>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 3 — WATER CONSERVATION CONTENT PAGE (ST1)
+                 Technical description, accessibility notes, and links
+            ══════════════════════════════════════ -->
+            <section id="content">
+                <h2>Water Conservation Content Page</h2>
+
+                <h3>Technical Description</h3>
+                <p>The Water Conservation page (<code>content_ST1.html</code>) provides educational content about water
+                    security. It utilizes an <code>.internal-nav</code> menu with an ordered list of anchor links
+                    (<code>href="#id"</code>) to allow users to jump to specific sections of the page. The
+                    <code>.content-hero</code> banner creates a professional introduction with a
+                    <code>min-height: 320px</code> and a gradient overlay for text readability.
+                </p>
+
+                <p>Layouts are balanced using a <code>.split-row</code> grid for two-column image and text descriptions,
+                    which collapses into a single column on mobile via a <code>@media (max-width: 720px)</code> query.
+                    Global statistics are displayed in a <code>.stat-row</code> using
+                    <code>repeat(auto-fit, minmax(180px, 1fr))</code> for responsiveness. A "Go to Top" button
+                    (<code>.go-top</code>) is implemented with <code>position: fixed</code> and CSS transitions for a
+                    smooth hover effect, ensuring navigation is easy on long pages.
+                </p>
+
+                <h3>Accessibility</h3>
+                <p>Semantic landmarks like <code>role="banner"</code> for the hero and
+                    <code>aria-label="Page sections"</code> for the internal navigation improve screen reader
+                    compatibility. Each content section is wrapped in an <code>&lt;article&gt;</code> with an
+                    <code>id</code> and <code>aria-labelledby</code> to correctly associate headings with their content.
+                    All images include valid <code>alt</code> text, and the "Go to Top" button has an
+                    <code>aria-label</code> and <code>title</code> to describe its action.
+                </p>
+
+                <h3>Link to the Validation Page</h3>
+                <p><a href="validation_ST1.html#contentVal">View HTML validation result for Content Page ST1</a></p>
+
+                <h3>Link to the Page</h3>
+                <p><a href="content_ST1.html" target="_blank">Open Water Conservation Page (content_ST1.html)</a></p>
+            </section>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 4 — CHALLENGES & LESSONS LEARNED
+                 Reflects on development difficulties and how they were resolved
+            ══════════════════════════════════════ -->
+            <section id="challenge">
+                <h2>Challenges and Lessons Learned</h2>
+                <p><strong>Challenge 1 — Template Consistency:</strong> One of the biggest hurdles was designing a
+                    shared HTML template that would be flexible enough for four different students to use. I had to
+                    ensure the <code>style.css</code> variables worked across all layouts without breaking individual
+                    page designs. This taught me the value of <code>:root</code> variables for maintaining brand
+                    consistency.</p>
+
+                <p><strong>Challenge 2 — Gallery Z-Index Bugs:</strong> During the Home page development, hovering over
+                    a gallery tile sometimes caused it to disappear behind the adjacent tile. This was resolved by
+                    explicitly setting <code>z-index: 10</code> on the <code>:hover</code> state, ensuring the active
+                    element always stays on top. This reinforced my understanding of stacking contexts.</p>
+
+                <p><strong>Challenge 3 — Modal State Management:</strong> In the Gallery page, managing the "hidden" and
+                    "visible" states of the modal pop-up while keeping the HTML valid required careful integration of
+                    CSS classes and JavaScript. I learned that toggling a class like <code>.open</code> is much more
+                    efficient and accessible than manipulating inline styles directly.</p>
+
+                <p><strong>Challenge 4 — Internal Navigation Offsets:</strong> On the Content page, clicking internal
+                    anchor links initially caused the section headings to be hidden under the sticky header. I resolved
+                    this by applying <code>scroll-margin-top: 90px</code> to the <code>.content-section</code> class.
+                    This was a valuable lesson in modern CSS properties for single-page navigation.</p>
+            </section>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 5 — COMPLIANCE
+                 Confirms adherence to JANET regulations and WCAG 2.1 guidelines
+            ══════════════════════════════════════ -->
+            <section id="compliance">
+                <h2>Compliance</h2>
+                <p>The pages developed for AquaAction strictly adhere to JANET (Joint Academic NETwork) regulations
+                    governing ethical and responsible use of web publication services. All content presented is original
+                    or properly cited, ensuring it is appropriate for an academic environment and does not contain any
+                    offensive, discriminatory, or illegal materials.</p>
+
+                <p><strong>Intellectual Property & Resources:</strong> I have used only original code for the structure
+                    and functionality of these pages. All external images were sourced from the public domain or
+                    royalty-free platforms like iStock and Unsplash, and they are fully credited in the references
+                    section below. No copyrighted templates or frameworks were used.</p>
+
+                <p><strong>Accessibility Compliance:</strong> Every page has been designed to follow WCAG 2.1
+                    accessibility guidelines. This includes maintaining adequate color contrast, using semantic HTML5
+                    elements for screen reader navigation, providing descriptive alt text for all images, and ensuring
+                    keyboard accessibility for interactive elements like the innovation gallery and navigation menus.
+                </p>
+
+                <p>For more details on compliance, see: <a
+                        href="https://intranet.ecs.westminster.ac.uk/modules/4COSC011W/compliance.html"
+                        target="_blank">Janet Compliance Regulations</a>.</p>
+            </section>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 6 — GROUP MEETINGS & INDIVIDUAL CONTRIBUTION LOG
+                 7 recorded meetings with individual actions clearly stated
+            ══════════════════════════════════════ -->
+            <section id="group">
+                <h2>Group Meetings and Individual Contribution Log</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="6">Group Meetings and Contribution Log</th>
+                        </tr>
+                        <tr>
+                            <th>Meeting</th>
+                            <th>Date &amp; Time</th>
+                            <th>Format</th>
+                            <th>Objective</th>
+                            <th>Attended</th>
+                            <th>Your Individual Contribution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>22 Mar 2026</td>
+                            <td>Online</td>
+                            <td>Set up shared GitHub repository and agree on folder structure and file naming
+                                conventions</td>
+                            <td>Yes</td>
+                            <td>I set up the GitHub repository and created the initial folder structure. I shared the
+                                agreed file naming conventions with all team members and ensured everyone had access to
+                                the repository.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>23 Mar 2026</td>
+                            <td>Face-to-face</td>
+                            <td>Collaborate on building the shared HTML template and global CSS file</td>
+                            <td>Yes</td>
+                            <td>I led the implementation of the shared HTML template and global CSS file. I defined the
+                                colour palette, typography, navigation bar structure, header and footer layout, and card
+                                components that all team members would use across their pages.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>24 Mar 2026</td>
+                            <td>Face-to-face</td>
+                            <td>Build the Home Page</td>
+                            <td>Yes</td>
+                            <td>I built the Home Page (home.html) implementing the hero banner with background image and
+                                overlay, the three mission cards using the global card styles, and the interactive
+                                gallery section with four clickable tiles linking to each student content page. I added
+                                the embedded CSS style block with the required minimum five CSS rules specific to the
+                                Home Page.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>25 Mar 2026</td>
+                            <td>Face-to-face</td>
+                            <td>Build the Gallery Page</td>
+                            <td>Yes</td>
+                            <td>I built the Gallery Page (gallery.html) with a grid of at least four thumbnail images. I
+                                implemented the JavaScript click-to-expand modal interaction, the close button and
+                                backdrop click to dismiss, and the user customisation controls inside the extended view
+                                allowing colour scheme and font style changes. I also added the active navigation
+                                indicator for the Gallery page.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>26 Mar 2026</td>
+                            <td>Face-to-face</td>
+                            <td>Build the Content Page ST1 and refine gallery JavaScript</td>
+                            <td>Yes</td>
+                            <td>I built content_ST1.html with multiple structured sections, an internal navigation menu
+                                with anchor links, a fixed Go to Top button using CSS only, and at least four relevant
+                                images with alt text. I also refined the gallery JavaScript to ensure hover effects and
+                                modal population worked correctly across all thumbnail items.</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>27 Mar 2026</td>
+                            <td>Face-to-face</td>
+                            <td>Source and integrate images, gather reference links and validate pages</td>
+                            <td>Yes</td>
+                            <td>I sourced all images for my three pages from iStockPhoto and Unsplash, saved them with
+                                the correct filenames, and added proper alt text throughout. I recorded all reference
+                                links and ran the W3C HTML validator on home.html, gallery.html, and content_ST1.html to
+                                check for errors.</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>28 Mar 2026</td>
+                            <td>Face-to-face</td>
+                            <td>Complete Page Editor, Validation Page and final submission preparation</td>
+                            <td>Yes</td>
+                            <td>I completed pageEditor_ST1.html with full technical descriptions, accessibility notes,
+                                challenges, compliance section, and references. I prepared validation screenshots for
+                                all three pages and finalised the validation_ST1.html page ready for submission.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- ══════════════════════════════════════
+                 SECTION 7 — REFERENCES
+                 Full APA-style citations for all external images, data, and resources
+            ══════════════════════════════════════ -->
+            <section id="ref">
+                <h2>References</h2>
+                <ul class="ref">
+                    <li>United Nations (n.d.) <i>Goal 6: Ensure availability and sustainable management of water and
+                            sanitation for all.</i> Available at: <a href="https://sdgs.un.org/goals/goal6"
+                            target="_blank">https://sdgs.un.org/goals/goal6</a> (Last accessed: 27 Mar 2026).</li>
+
+                    <li>Unsplash (n.d.) <i>Sprinklers spraying water on a field of crops.</i> Available at: <a
+                            href="https://unsplash.com/photos/sprinklers-spraying-water-on-a-field-of-crops-ztHHjV0t0Qw"
+                            target="_blank">https://unsplash.com/photos/sprinklers-spraying-water-on-a-field-of-crops-ztHHjV0t0Qw</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>Wikimedia Commons (n.d.) <i>Simple Diagram to show Rainwater Harvesting.</i> Available at: <a
+                            href="https://commons.wikimedia.org/wiki/File:Simple_Diagram_to_show_Rainwater_Harvesting.png"
+                            target="_blank">https://commons.wikimedia.org/wiki/File:Simple_Diagram_to_show_Rainwater_Harvesting.png</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>Scielo (2012) <i>Low-cost clay filters for drinking water.</i> Available at: <a
+                            href="https://www.scielo.org.za/scielo.php?pid=S1816-79502012000500010&script=sci_arttext"
+                            target="_blank">https://www.scielo.org.za/scielo.php?pid=S1816-79502012000500010&script=sci_arttext</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>ResearchGate (2023) <i>Schematic of solar thermal integrated desalination plant.</i> Available
+                        at: <a
+                            href="https://www.researchgate.net/figure/Schematic-of-solar-thermal-integrated-desalination-plant-which-shows-the-economic_fig1_367072149"
+                            target="_blank">https://www.researchgate.net/figure/Schematic-of-solar-thermal-integrated-desalination-plant-which-shows-the-economic_fig1_367072149</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>USAID (2014) <i>Clean Water Access - Flickr.</i> Available at: <a
+                            href="https://www.flickr.com/photos/usaid_images/14783669867"
+                            target="_blank">https://www.flickr.com/photos/usaid_images/14783669867</a> (Last accessed:
+                        27 Mar 2026).</li>
+
+                    <li>Juniper Publishers (n.d.) <i>Advanced Water Recovery Systems.</i> Available at: <a
+                            href="https://juniperpublishers.com/aibm/AIBM.MS.ID.555639.php"
+                            target="_blank">https://juniperpublishers.com/aibm/AIBM.MS.ID.555639.php</a> (Last accessed:
+                        27 Mar 2026).</li>
+
+                    <li>Getty Images (n.d.) <i>Crystal clear water beach.</i> Available at: <a
+                            href="https://www.gettyimages.com/photos/crystal-clear-water-beach"
+                            target="_blank">https://www.gettyimages.com/photos/crystal-clear-water-beach</a> (Last
+                        accessed: 27 Mar 2026).</li>
+
+                    <li>Apure Instrument (n.d.) <i>Importance of clean water in the environment.</i> Available at: <a
+                            href="https://apureinstrument.com/blogs/importance-of-clean-water-in-the-environment/"
+                            target="_blank">https://apureinstrument.com/blogs/importance-of-clean-water-in-the-environment/</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>Stockcake (n.d.) <i>Cracked earth pattern.</i> Available at: <a
+                            href="https://stockcake.com/i/cracked-earth-pattern_1975778_1302073"
+                            target="_blank">https://stockcake.com/i/cracked-earth-pattern_1975778_1302073</a> (Last
+                        accessed: 27 Mar 2026).</li>
+
+                    <li>Depositphotos (n.d.) <i>Turning off the tap water.</i> Available at: <a
+                            href="https://depositphotos.com/video/turning-off-the-tap-water-90872114.html"
+                            target="_blank">https://depositphotos.com/video/turning-off-the-tap-water-90872114.html</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>USDA ERS (2021) <i>U.S. food-related water use.</i> Available at: <a
+                            href="https://www.ers.usda.gov/amber-waves/2021/august/u-s-food-related-water-use-varies-by-food-category-supply-chain-stage-and-dietary-pattern"
+                            target="_blank">https://www.ers.usda.gov/amber-waves/2021/august/u-s-food-related-water-use-varies-by-food-category-supply-chain-stage-and-dietary-pattern</a>
+                        (Last accessed: 27 Mar 2026).</li>
+
+                    <li>EducationAUS (n.d.) <i>Community water refill stations.</i> Available at: <a
+                            href="https://educationaus.net.au/civiq/"
+                            target="_blank">https://educationaus.net.au/civiq/</a> (Last accessed: 27 Mar 2026).</li>
+
+                    <li>Duckett, J. (2011) <i>HTML and CSS: Design and Build Websites,</i> John Wiley &amp; Sons Inc.,
+                        Indianapolis.</li>
+                </ul>
+            </section>
+
+            <!-- Back to top link — anchors to the browser's top of the page -->
+            <p class="top"><a href="#top">Go top</a></p>
+
+        </main>
+
+    </div>
+
+    <!-- ===== FOOTER: Shared site footer with student credit and support links ===== -->
+    <footer>
+        <p>AquaAction: Securing Every Drop for Everyone</p>
+        <p>
+            <a href="pageEditor_ST1.html">Page Editor</a> |
+            <a href="validation_ST1.html">Validation Report</a> |
+            <a href="https://wave.webaim.org/">Accessibility Compliance</a>
+        </p>
+        <p>Methum Thevjan Weeratunga | 20233134 / W2182089 | Role: Website HTML Template, Global CSS, Content_ST1, Home
+            Page & Gallery</p>
+    </footer>
+
+</body>
+
+</html>
