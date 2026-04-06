@@ -32,8 +32,6 @@ Accessibility: Compliance with WCAG 2.1 standards, including a custom targeted t
 
 Responsive Design: Mobile-first approach using CSS Grid (auto-fit/minmax logic) and Flexbox for seamless cross-device compatibility.
 
-Directory Structure
--------------------
 AquaAction/
 ├── images/               # Optimized assets for content and innovation gallery
 ├── validationSnapshots/  # Documentation of W3C compliance
